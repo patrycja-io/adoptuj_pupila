@@ -1,0 +1,59 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f2b5d4; /* Kolor tła */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder {
+    text-align: center;
+    color: #000000;
+}
+
+.paw-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paw-icon {
+    width: 100px; /* Zmniejszenie rozmiaru ikony */
+    height: auto; /* Ustawienie wysokości ikony */
+    -webkit-animation: movePaw 1s infinite ease-in-out; /* For Safari and Chrome */
+    -moz-animation: movePaw 1s infinite ease-in-out; /* For Firefox */
+    -o-animation: movePaw 1s infinite ease-in-out; /* For Opera */
+    animation: movePaw 1s infinite ease-in-out;
+}
+
+/* Animacja poruszania się łapki */
+@-webkit-keyframes movePaw {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes movePaw {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.placeholder h1 {
+    font-size: 2rem; /* Dostosuj rozmiar czcionki */
+    margin-top: 20px;
+    font-weight: 700; /* Wyróżnienie nagłówka */
+    font-family: Pacifico, cursive;
+}
+
+.placeholder p {
+    font-size: 1rem; /* Dostosuj rozmiar czcionki */
+    margin-top: 10px;
+    font-weight: 400;
+}
+
